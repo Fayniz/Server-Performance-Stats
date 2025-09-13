@@ -12,3 +12,18 @@ echo "##########################"
 df -h | grep /nvme0n1p2 | awk '{print "Disk Size  " $2 }'
 df -h | grep /nvme0n1p2 | awk '{print "Disk Used  " $3 " " $5}'
 df -h | grep /nvme0n1p2 | awk '{print "Free Space " $2 - $3 "G " 100 - $5 "%"}'
+
+echo "#########################"
+
+echo "top 5 process by cpu usage"
+
+top -bn1 | sed -n '7,12p'
+
+echo "#########################"
+
+echo "top 5 process by memory usage"
+
+top -bn1 -o %MEM | sed -n '7,12p'
+
+echo "#########################" 	
+
