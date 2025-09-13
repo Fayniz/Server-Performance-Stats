@@ -16,3 +16,7 @@ You are required to write a script server-stats.sh that can analyse basic server
 ### Terminal output
 
 ![terminal output](https://github.com/Fayniz/Server-Performance-Stats/blob/main/terminal%20output.png)
+
+### Link to project
+
+[project URL](https://roadmap.sh/projects/server-stats)
